@@ -6,6 +6,8 @@
 
 let launchReady = false;
 let fuelLevel = 17000;
+console.log(launchReady); 
+
 // let crewStatus = true;
 // let computerStatus = 'green';
 
