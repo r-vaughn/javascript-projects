@@ -10,7 +10,7 @@ function divide(numerator, denominator) {
     if (denominator === 0) {
         throw Error("Attempted to divide by zero.")
     }
-    return (numerator/denominator)
+    return (numerator/denominator);
 }
 
 console.log(divide(2, 4));
