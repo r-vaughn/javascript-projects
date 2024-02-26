@@ -41,9 +41,9 @@ let gladGator = new CrewCandidate("Glad Gator", 225, [75, 78, 62]);
 // console.log(merryMaltese);
 // console.log(gladGator); 
 
-console.log(bubbaBear.status());
-console.log(merryMaltese.status());
-console.log(gladGator.status());
+// console.log(bubbaBear.status());
+// console.log(merryMaltese.status());
+// console.log(gladGator.status());
 
 //Add methods for adding scores, averaging scores and determining candidate status as described in the studio activity.
 

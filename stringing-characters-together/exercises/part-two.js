@@ -46,4 +46,6 @@ console.log(`The DNA strand is ${dnaTwoLength} characters long.`);
 
 //5) Just for fun, apply methods to ``dna`` and use another template literal to print, 'taco cat'.
 
-console.log(`${dna.slice(4,7).toLowerCase()}o ${dna.slice(dna.indexOf("CAT"),dna.indexOf("CAT")+3).toLowerCase()}`)
+let catLocation = dna.indexOf("CAT");
+
+console.log(`${dna.slice(4,7).toLowerCase()}o ${dna.slice(catLocation,catLocation+3).toLowerCase()}`)

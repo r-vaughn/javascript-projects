@@ -51,5 +51,24 @@ console.log(book0[2][0][2]);
 console.log(book0[0][0][1]);
 console.log(book0[1][0][0]);
 
+//let phrase = 'Code for fun'
+//console.log(phrase[2]);
 
+//let phrase = "JavaScript rocks!";
+//console.log(phrase[phrase.length - 8]);
 
+//let language = "JavaScript";
+//console.log(language.slice(1,6));
+
+//const classes = ["science, computer, art"];
+//const teachers = ["Jones", "Willoughby", "Rhodes"];
+
+//console.log(classes.length);
+//console.log(teachers.length);
+
+myStr = 'Index'
+
+console.log(myStr[2] ==='n');
+console.log(myStr[4] ==='x');
+console.log(myStr[6] ===' ');
+console.log(myStr[0] ==='I');

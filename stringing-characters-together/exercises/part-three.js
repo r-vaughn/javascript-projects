@@ -29,3 +29,4 @@ console.log(language.slice(0,4).toUpperCase());
 let notTitleCase = 'title case';
 
 console.log(notTitleCase.replace("t", "T").replace("c", "C"));
+

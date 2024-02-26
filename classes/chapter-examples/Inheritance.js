@@ -6,14 +6,14 @@ class Felidae {
 
 class Panthera extends Felidae {
 	constructor() {
-    super();
+    	super();
 		this.roar = "loud";
 	}
 }
 
 class Tiger extends Panthera {
 	constructor() {
-    super();
+    	super();
 		this.hasStripes = "true";
 	}
 }

@@ -15,3 +15,4 @@ function divide(numerator, denominator) {
 
 console.log(divide(2, 4));
 console.log(divide(4, 0));
+

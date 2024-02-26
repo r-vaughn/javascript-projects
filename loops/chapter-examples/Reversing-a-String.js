@@ -1,4 +1,4 @@
-let str = "blue";
+nm let str = "blue";
 let reversed = "";
 
 for (let i = 0; i < str.length; i++) {

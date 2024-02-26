@@ -6,4 +6,8 @@ function reverse(str) {
    return reverse(str) === str;
  }
  
+
+ //console.log(isPalindrome("launchcode"));
+ //console.log(isPalindrome("Tacocat"));
+
  module.exports = isPalindrome;
