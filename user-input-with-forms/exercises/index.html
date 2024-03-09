@@ -3,13 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Rocket Simulation</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <style>
       label { display: block; margin-bottom: 7px;}
-    </style>
+      </style>
   </head>
   <body>
     <!-- TODO: add form here -->
     
+
+    <h1 id="formTitle">Rocket Simulation</h1>
+    
+    <form id="form" action="https://handlers.education.launchcode.org/request-parrot" method="POST">
+      
+      <label>Test Name <input type="text" name="testName" required/></label>
+
+      <label>Test Date <input type=date name="testDate" required/></label>
+
+      <label>Rocket Type <select name="rocketType" required>
+        <option value="">* Select One *</option>
+        <option value="1">Brant</option>
+        <option value="2">Lynx</option>
+        <option value="3">Orion</option>
+        <option value="4">Terrier</option>
+      </select></label>
+      
+      <label>Number of Rocket Boosters <input type=number name="boosterCount" min="0" max="10" required/></label>
+      
+      <label>Wind Rating: </label>
+      <label>No Wind  <input type=radio name="windRating" value="0"/></label>
+      <label>Mild Wind  <input type=radio name="windRating" value="10"/></label>
+      <label>Strong Wind  <input type=radio name="windRating" value="20"/></label>
+      
+      <label>Use Production Grade Servers: <input type="checkbox" name="productionServers" value="on"/></label>
+
+      <button type="submit">Run Simulation</button>
+
+    </form>
+
+    <script src="script.js"></script>
+    <p id="log"></p>
 
     <p>WARNING: This ONLY works in <b>replit</b> if this "result" page is opened in its own window. Click the icon that shows a box with an arrow coming out of it.
     </p>
