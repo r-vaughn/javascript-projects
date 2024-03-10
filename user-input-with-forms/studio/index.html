@@ -3,9 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<script>
+		function setSearchEngine() {
+			console.log("setSearchEngine has logged");
+		}
 		// TODO: create a handler
     window.addEventListener("load", function(){
         // TODO: register the handler
+		return setSearchEngine
     });
 	</script>
 </head>
@@ -13,7 +17,17 @@
 <body>
 
 	<form id="searchForm">
-    <!-- TODO: add form elements -->
+		<!-- TODO: add form elements -->
+		
+		<input type="text" name="q"/>
+
+		<label><input type="radio" name="searchEngine" value="google" action="https://www.google.com/search"/>Google</label>
+		<label><input type="radio" name="searchEngine" value="duckDuckGo" action="https://duckduckgo.com/"/>DuckDuckGo</label>
+		<label><input type="radio" name="searchEngine" value="bing" action="https://www.bing.com/search"/>Bing</label>
+		<label><input type="radio" name="searchEngine" value="ask" action="https://www.ask.com/web"/>Ask</label>
+		
+		<button value="Go!">Go!</button>
+
 	</form>
 
 </body>
