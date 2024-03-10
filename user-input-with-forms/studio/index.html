@@ -3,14 +3,42 @@
 <head>
 	<meta charset="utf-8">
 	<script>
-		function setSearchEngine() {
-			console.log("setSearchEngine has logged");
+		let actions = {
+			"google": "https://www.google.com/search", 
+			"duckDuckGo": "https://duckduckgo.com/", 
+			"bing": "https://www.bing.com/search", 
+			"ask": "https://www.ask.com/web"
+		}
+
+		function setSearchEngine(event) {
+			//Get the action URL using actions, bracket notation, and the value of the selected radio button.
+
+			let inputSelection = document.querySelector('input[name="engine"]:checked');
+			let searchEngine = inputSelection.value;
+			let form = document.getElementById("searchForm");
+			
+			for (item in actions) {
+				
+				if (item === searchEngine) {
+					form.setAttribute("action", actions[item]);
+				};
+			
+			};
+
 		}
 		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-		return setSearchEngine
-    });
+   
+	window.addEventListener("load", function(event) {
+	
+		// TODO: register the handler
+
+		let searchSubmit = document.querySelector("input[name=button]");
+		let form = document.getElementById("searchForm");
+
+		form.addEventListener("submit", setSearchEngine );
+	
+	});
+
 	</script>
 </head>
 
@@ -21,13 +49,20 @@
 		
 		<input type="text" name="q"/>
 
-		<label><input type="radio" name="searchEngine" value="google" action="https://www.google.com/search"/>Google</label>
-		<label><input type="radio" name="searchEngine" value="duckDuckGo" action="https://duckduckgo.com/"/>DuckDuckGo</label>
-		<label><input type="radio" name="searchEngine" value="bing" action="https://www.bing.com/search"/>Bing</label>
-		<label><input type="radio" name="searchEngine" value="ask" action="https://www.ask.com/web"/>Ask</label>
+		<label><input type="radio" name="engine" value="google"/>Google</label>
+		<label><input type="radio" name="engine" value="duckDuckGo"/>DuckDuckGo</label>
+		<label><input type="radio" name="engine" value="bing"/>Bing</label>
+		<label><input type="radio" name="engine" value="ask"/>Ask</label>
 		
-		<button value="Go!">Go!</button>
+		<input type="submit" name="button" value="Go!"/>
 
 	</form>
+
+<script>
+
+//console.log(inputSelection);
+
+</script>
+
 
 </body>
